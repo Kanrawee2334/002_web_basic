@@ -1,0 +1,230 @@
+:root{
+    --primary-color:rgb(244, 13, 163);
+    --secondaary-color: rgb(253, 162, 70);
+    --background-color: rgb(253, 193, 243);
+    --text-color-normal:rgb(31, 14, 215);
+    --box-shadow:0px 2px 10px rgb(165, 166, 168);
+    --base-white-color: rgb(248, 248, 248);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--text-color-normal)
+}
+header{
+    background-color: var(--background-color);
+    padding: 10px 0;
+    box-shadow: var(--box-shadow);
+}
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    color: var(--primary-color);
+    
+    max-width: 1200px;
+    margin: auto;
+}
+.logo-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo{
+        display: flex;
+        align-items: center;
+    }
+}
+.header-button{
+
+}
+nav , ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    margin-left: 20px;
+    
+    a{
+        text-decoration: none;
+        color: var(--primary-color);
+    }
+}
+/* Button style*/
+.btn{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: var(--text-color-normal);
+    cursor: pointer;
+    transition: all0.3s;
+}
+.btn-login{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color:  var(--base-white-color);
+    color: var(--text-color-normal);
+    border: 1px solid var(--secondaary-color);;
+    cursor: pointer;
+    transition: all0.3s;
+}
+.btn:hover{
+    background-color:var(--secondaary-color);
+}
+.btn-login:hover{
+    background-color:var(--secondaary-color); 
+}
+
+
+/*   main   */
+.container{
+    max-width: 1200px;
+    padding: 0 30px;
+    margin: 50px auto;
+}
+
+
+/*    hero  */
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left-side{
+   width: 50%; 
+   h1{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+   }
+   p{
+    font-size: 1.2rem;
+    margin: 20px 0;
+   }
+}
+.right-side{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    img{
+        width: 100%;
+    }
+}
+
+/*    solution  */
+
+.solution{
+    margin-top: 50px;
+}
+.solution-headar{
+    text-align: center;
+    margin-bottom: 20px;
+    
+    h2{
+        font-size: 2rem;
+        color: var(--primary-color);
+        margin-bottom:20px;
+    }
+    p{
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+}
+.solution-content{
+    display: flex;
+    justify-content: center;
+     .item{
+        width: 32%;
+     }
+
+}
+.item{
+    box-shadow: var(--box-shadow);
+    margin: 10px 10px;
+    padding: 20px;
+    border-radius: 10px;
+    
+
+    h3{
+        font-size: 1.5rem;
+        color: var(--secondaary-color);
+        margin-bottom: 10px;
+    }
+    p{
+        font-size: 1rem;
+        margin-bottom: 10px;
+        
+    }
+}
+
+
+.customization{
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 70px;
+    h2{
+        font-size: 2rem;
+        color: var(--primary-color);
+        margin-bottom:20px;
+    }
+    p{
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+}
+
+
+.support{
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 70px;
+    flex-direction: row-reverse;
+    
+    h2{
+        font-size: 2rem;
+        color: var(--primary-color);
+        margin-bottom:20px;
+    }
+    p{
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+}
+.support-right{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 50%;
+    
+    imge{
+        width: 50%;
+    }
+}
+
+
+
+
+
+.discover{
+    margin-top: 50px;
+}
+.discover-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    
+}

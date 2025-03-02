@@ -111,11 +111,14 @@ nav {
 
 
 /*    hero  */
-.hero {
+    .hero {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
+
+
 
 .left-side {
     width: 50%;
@@ -204,6 +207,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     margin-top: 70px;
+    
 
     h2 {
         font-size: 2rem;
@@ -227,6 +231,7 @@ nav {
     align-items: center;
     margin-top: 70px;
     flex-direction: row-reverse;
+   ;
 
     h2 {
         font-size: 2rem;
@@ -247,7 +252,7 @@ nav {
     width: 50%;
 
     image {
-        width: 100%;
+       width: 100%;
     }
 }
 
